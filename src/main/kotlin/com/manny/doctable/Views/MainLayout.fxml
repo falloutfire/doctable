@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="com.manny.doctable.Controllers.MainLayoutController">
+    <children>
+        <TableView fx:id="docTableView" layoutX="50.0" layoutY="95.0" prefHeight="380.0" prefWidth="700.0"
+                   stylesheets="@../Views/style.css">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <Button layoutX="50.0" layoutY="27.0" mnemonicParsing="false" onAction="#onClickAddColumn"
+                text="Добавить колонку"/>
+        <Button layoutX="194.0" layoutY="27.0" mnemonicParsing="false" onAction="#onClickAddRow" prefHeight="25.0"
+                prefWidth="127.0" text="Добавить строку"/>
+        <Button layoutX="480.0" layoutY="27.0" mnemonicParsing="false" onAction="#onClickDeleteRow" prefHeight="25.0"
+                prefWidth="127.0" text="Удалить строку"/>
+        <Button layoutX="337.0" layoutY="27.0" mnemonicParsing="false" onAction="#onClickDeleteColumn" prefHeight="25.0"
+                prefWidth="127.0" text="Удалить колонку"/>
+        <Button layoutX="623.0" layoutY="27.0" mnemonicParsing="false" onAction="#onClickTest" prefHeight="25.0"
+                prefWidth="127.0" text="Тест"/>
+        <TextField fx:id="nameTableField" layoutX="50.0" layoutY="61.0" prefHeight="25.0" prefWidth="700.0"
+                   promptText="Введите название таблицы"/>
+    </children>
+</AnchorPane>
